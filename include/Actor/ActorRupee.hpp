@@ -34,7 +34,6 @@ public:
 
 struct Actor_c4_stack {
     unk32 param1;
-    unk32 param2;
 };
 
 class Actor_c4_Base {

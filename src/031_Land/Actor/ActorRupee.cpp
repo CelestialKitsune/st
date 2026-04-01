@@ -862,15 +862,14 @@ ARM Actor_c4::Actor_c4(Actor *param1) :
     this->mUnk_04 = 1;
 }
 
-// non-matching
 ARM unk32 Actor_c4::vfunc_00(Actor_c4_stack param1, unk32 param2) {
-    if (param1.param2 != 0) {
+    if (param2 != 0) {
         ActorRupee *pRupee = GET_ACTOR_RUPEE(this->mUnk_20);
         pRupee->mUnk_c0    = param1.param1;
         pRupee->func_ov031_020e9904(7);
     }
 
-    return this->func_ov031_020f62e4(param1.param1, param1.param2);
+    return this->func_ov031_020f62e4(param1.param1, param2);
 }
 
 ARM void Actor_c4::vfunc_04() {
